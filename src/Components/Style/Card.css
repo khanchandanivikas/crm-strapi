@@ -1,0 +1,52 @@
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid #ddd;
+    background-color: #2C3447;
+    color: #fff;
+}
+
+.card2 {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.4);
+}
+span {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+p {
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #2b2c48;
+}
+
+h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    margin: 2px;
+}

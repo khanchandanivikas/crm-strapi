@@ -1,0 +1,24 @@
+.barra {
+    background-color: rgb(53,63,82);
+    color: #fff;
+    height: 70px;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+}
+li {
+    color: #fff;
+    padding: 1rem;
+}
+li:hover{
+    background-color: rgb(42, 95, 194);
+    padding: 1rem;
+}
+a {
+    text-decoration: none;
+}
+
