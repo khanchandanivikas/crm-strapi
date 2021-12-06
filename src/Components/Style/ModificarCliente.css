@@ -41,3 +41,21 @@
     border-radius: 20px;
     box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.6);
 }
+
+@media only screen and (max-width: 1024px) {
+    .formulario {
+      width: 40%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .formulario {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 481px) {
+    .formulario {
+      width: 80%;
+    }
+  }

@@ -10,6 +10,7 @@ import ListaClientes from "./Components/Listas/ListaClientes";
 import ListaEventos from "./Components/Listas/ListaEventos";
 import AñadirCliente from "./Components/Formularios/AñadirCliente";
 import AñadirEvento from "./Components/Formularios/AñadirEvento";
+import Hamburg from "./Components/Hamburg";
 
 function App() {
   const [clientes, setClientes] = useState([]);
@@ -70,11 +71,18 @@ function App() {
       console.log("error" + error);
     }
   };
+
+  const [hamburger, setHamburger] = useState(false);
+  const toggleHamburger = () => {
+    setHamburger(!hamburger);
+  };
+
   return (
     <Router>
       <div className="App">
         <Header />
-        <BarraLateral />
+        <Hamburg hamburger={hamburger} toggleHamburger={toggleHamburger} />
+        <BarraLateral hamburger={hamburger} toggleHamburger={toggleHamburger} />
         <Switch>
           <Route exact path="/">
             <Loader />

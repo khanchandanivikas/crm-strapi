@@ -1,24 +1,58 @@
 .barra {
-    background-color: rgb(53,63,82);
+    background-color: rgb(53, 63, 82);
     color: #fff;
-    height: 70px;
+    padding: 10px 0.5rem;
+    top: -100%;
+    transition: all 0.5s ease;
 }
+
+.barra-show {
+    background-color: rgb(53, 63, 82);
+    color: #fff;
+    padding: 10px 0.5rem;
+    top: 150px;
+    transition: all 0.5s ease;
+}
+
 ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    height: 70px;
 }
+
 li {
     color: #fff;
     padding: 1rem;
 }
-li:hover{
+
+li:hover {
     background-color: rgb(42, 95, 194);
     padding: 1rem;
 }
+
 a {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+
+    .barra {
+        height: calc(100vh - 150px);
+        width: 100vw;
+        position: fixed;
+    }
+
+    .barra-show {
+        height: calc(100vh - 150px);
+        width: 100vw;
+        position: fixed;
+    }
+
+    .barra-power {
+        display: none;
+    }
+}

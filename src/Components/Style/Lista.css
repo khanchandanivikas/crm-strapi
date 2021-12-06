@@ -7,6 +7,7 @@
     gap: 2rem;
     margin: 2rem;
 }
+
 .lista2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,4 +16,19 @@
     align-items: center;
     gap: 2rem;
     margin: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .lista {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .lista {
+        grid-template-columns: 1fr;
+    }
+    .lista2 {
+        grid-template-columns: 1fr;
+    }
 }

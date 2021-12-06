@@ -17,11 +17,13 @@
     padding: 20px;
     box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.4);
 }
+
 span {
     font-weight: 700;
     font-size: 1rem;
     letter-spacing: 1px;
 }
+
 p {
     letter-spacing: 1px;
     font-weight: 400;
@@ -31,6 +33,7 @@ p {
 h3 {
     font-size: 1rem;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .logo {
@@ -49,4 +52,14 @@ h3 {
 
 button {
     margin: 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .flex {
+        width: 120%;
+    }
+
+    button {
+        width: 40%;
+    }
 }

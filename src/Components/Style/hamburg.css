@@ -1,0 +1,20 @@
+.hamburger-container {
+    background-color: rgb(53, 63, 82);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 2rem;
+}
+
+.fa-power-off {
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .hamburger-container {
+        display: none;
+    }
+}
+

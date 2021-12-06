@@ -41,7 +41,7 @@ const Loader = () => {
           <div className="overlay"></div>
           <div className="form-container">
             <form action="" onSubmit={handleSubmit} className="formulario">
-              <h1>Validar Credenciales</h1>
+              <h2>Validar Credenciales</h2>
               <input
                 type="password"
                 name="contraseña"

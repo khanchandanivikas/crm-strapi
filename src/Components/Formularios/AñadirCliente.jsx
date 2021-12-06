@@ -29,11 +29,12 @@ const AñadirCliente = (props) => {
     const clientesRecuperar = props.recuperarClientes;
     e.preventDefault();
     const formData = new FormData();
-    formData.append("files", files[0]);
+    formData.append("file", files[0]);
+    formData.append("upload_preset", "crmStrapi");
     axios
-      .post(process.env.REACT_APP_BACKEND_URL + "/upload", formData)
+      .post(process.env.REACT_APP_CLOUDINARY_URL + "/image/upload", formData)
       .then((response) => {
-        const imageId = response.data[0].id;
+        const imageId = response.data.secure_url;
         axios
           .post(process.env.REACT_APP_BACKEND_URL + "/clientes", {
             imagen: imageId,
@@ -64,7 +65,7 @@ const AñadirCliente = (props) => {
   return (
     <div className="container">
       <form action="" onSubmit={handleAñadirCliente} className="form">
-        <h1>Añadir Cliente</h1>
+        <h2>Añadir Cliente</h2>
         <input
           onChange={handleNuevoImagen}
           type="file"

@@ -40,7 +40,7 @@ const ElementoClienteBuscado = (props) => {
   return (
     <div className="card">
       <img
-        src={process.env.REACT_APP_BACKEND_URL + `${cliente.imagen.url}`}
+        src={cliente.imagen}
         alt="empresa"
         className="logo"
       />

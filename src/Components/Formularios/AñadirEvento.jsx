@@ -62,7 +62,7 @@ const AñadirEvento = (props) => {
   return (
     <div className="container">
       <form action="" onSubmit={handleAñadirEvento} className="form">
-        <h1>Añadir Evento</h1>
+        <h2>Añadir Evento</h2>
         <input
           value={nuevoCliente}
           onChange={handleNuevoCliente}
