@@ -63,7 +63,7 @@ const ElementoClienteBuscado = (props) => {
         value={nuevoMostrar}
         onChange={handleNuevoMostrar}
       >
-        Mostrar Eventos
+        Eventos
       </button>
       {modal ? (
         <ListaMostrarEvento

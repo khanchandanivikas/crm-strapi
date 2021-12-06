@@ -8,7 +8,7 @@ const ListaClienteBuscado = (props) => {
   const eventoEliminar = props.eliminarEvento;
   const listaEventos = props.eventos;
   return (
-    <div style={{ marginTop: "1.5rem", width: "30%" }}>
+    <div style={{ marginTop: "1.5rem" }}>
       {props.listaClienteBuscado.map((element) => {
         return (
           <ElementoClienteBuscado
